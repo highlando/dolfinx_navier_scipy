@@ -39,7 +39,7 @@ def output_paraview(V=None, Q=None, VS=None, fstring='nn',
                 tfilter.pop(0)
 
         # hiding this calls to dolfin as much as possible
-        from .dolfin_to_sparrays import expand_vp_dolfunc
+        from .dolfinx_to_sparrays import expand_vp_dolfunc
 
     if vc is not None or pc is not None or vp is not None:
         v, p = expand_vp_dolfunc(V=V, Q=Q, vp=vp,
@@ -208,7 +208,7 @@ def plot_outp_sig(str_to_json=None, tmeshkey='tmesh', sigkey='outsig',
 
 def save_output_json(datadict=None,
                      fstring='unspecified_outputfile',
-                     module='dolfin_navier_scipy.data_output_utils',
+                     module='dolfinx_navier_scipy.data_output_utils',
                      plotroutine='plot_outp_sig'):
     """save output to json for postprocessing
 
