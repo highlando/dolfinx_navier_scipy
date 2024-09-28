@@ -7,10 +7,10 @@ import time
 
 import dolfinx
 
-import dolfin_navier_scipy.dolfin_to_sparrays as dts
-import dolfin_navier_scipy.data_output_utils as dou
+import dolfinx_navier_scipy.dolfinx_to_sparrays as dts
+import dolfinx_navier_scipy.data_output_utils as dou
 
-import dolfin_navier_scipy.time_int_utils as tiu
+import dolfinx_navier_scipy.time_int_utils as tiu
 
 __all__ = ['get_datastr_snu',
            'get_v_conv_conts',

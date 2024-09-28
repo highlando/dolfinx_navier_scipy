@@ -25,8 +25,7 @@ from basix.ufl import element
 from mpi4py import MPI
 from petsc4py import PETSc
 
-# import dolfinx as dolfin
-import dolfin_navier_scipy.dolfin_to_sparrays as dts
+import dolfinx_navier_scipy.dolfin_to_sparrays as dts
 import numpy as np
 import json
 

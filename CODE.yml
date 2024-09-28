@@ -1,8 +1,8 @@
 ---
-name: dolfin_navier_scipy
-shortname: dns
-version: 1.1.1
-release-date: 2020-06-26
+name: dolfinx_navier_scipy
+shortname: dxns
+version: 0.0.0
+release-date: 2024-09-28
 id: 
 id-type: doi
 authors: Jan Heiland
@@ -11,12 +11,13 @@ topic: Flow Simulation
 type: module
 license: GPL v3
 license-type: Open
-repository: github.com/highlando/dolfin_navier_scipy
+repository: github.com/highlando/dolfinx_navier_scipy
 repository-type: git
 languages: Python
 dependencies: 
-- Scipy
-- dolfin (fenics)
+- numpy
+- scipy
+- dolfinx (fenicsx)
 systems: Linux
 website: http://dolfin-navier-scipy.readthedocs.org/en/latest/index.html
 keywords: 
